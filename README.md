@@ -8,20 +8,21 @@ Elle connecte l'intégralité de la matière du cours (**146 ressources** : PDF,
 
 ## 🧠 Architecture NotebookLM Connectée (12 Notebooks • 146 Ressources)
 
-| Code | Titre du NotebookLM | Sources | Lien Direct NotebookLM |
+| Code | Titre du NotebookLM (`lynshames@gmail.com`) | Sources | Lien Direct NotebookLM (`lynshames@gmail.com`) |
 | :--- | :--- | :---: | :--- |
-| **REF** | **ENP7333 - Références, Évaluations & Politiques (MAPAQ & Aide féministe)** | 31 | [Ouvrir REF](https://notebooklm.google.com/notebook/a70f3776-7009-4de8-9af6-da32638e4243) |
-| **M00** | **ENP7333 - M00 : Introduction - Le cycle des politiques publiques** | 2 | [Ouvrir M00](https://notebooklm.google.com/notebook/fbfe0031-6e10-4c18-bde9-ebea22e54d32) |
-| **M01** | **ENP7333 - M01 : Les caractéristiques des politiques publiques** | 8 | [Ouvrir M01](https://notebooklm.google.com/notebook/00364e65-88f6-4e1f-9c03-9b51fd785996) |
-| **M02** | **ENP7333 - M02 : Les problèmes ou enjeux publics** | 9 | [Ouvrir M02](https://notebooklm.google.com/notebook/9d7e8853-ff91-4c1f-8fcf-d508b08acd14) |
-| **M03** | **ENP7333 - M03 : Les niveaux d'action publique** | 7 | [Ouvrir M03](https://notebooklm.google.com/notebook/53be10b1-a8eb-466d-9ee2-7af137a7cd3c) |
-| **M04** | **ENP7333 - M04 : Les acteurs, instruments et institutions** | 19 | [Ouvrir M04](https://notebooklm.google.com/notebook/2dd0b2ae-7d0e-4307-a868-c0be6aa3cd6e) |
-| **M05** | **ENP7333 - M05 : Le processus de prise de décision** | 21 | [Ouvrir M05](https://notebooklm.google.com/notebook/271b5bf0-246c-4f43-8591-fde4df7c4db4) |
-| **M06** | **ENP7333 - M06 : Les techniques d'analyse** | 11 | [Ouvrir M06](https://notebooklm.google.com/notebook/02070845-a7ac-477a-a1f9-0b14b9f415ba) |
-| **M07** | **ENP7333 - M07 : L'énoncé de politique publique et le plan de mise en œuvre** | 21 | [Ouvrir M07](https://notebooklm.google.com/notebook/374e8cef-dd5b-42fe-b6a4-049e89b87ca8) |
-| **M08** | **ENP7333 - M08 : Les canaux de diffusion d'une politique publique** | 6 | [Ouvrir M08](https://notebooklm.google.com/notebook/ed7f2996-4d51-48f7-b407-d92fdd39c574) |
-| **M09** | **ENP7333 - M09 : Les effets réels et symboliques et l'évaluation** | 11 | [Ouvrir M09](https://notebooklm.google.com/notebook/bba288e4-35e1-4f5a-8cdd-fdc13935d94f) |
-| **PINKER** | **Rendez vos écrits plus puissants et persuasifs (Steven Pinker)** | Synthèse | [Ouvrir Pinker](https://notebooklm.google.com/notebook/a109ad5c-834d-4f3d-82a0-fe41aa72318e) |
+| **REF** | **ENP7333 - Références, Évaluations & Politiques (MAPAQ & Aide féministe)** | 31 | [Ouvrir REF](https://notebooklm.google.com/notebook/42234051-b2f5-45d0-a481-f82ee6c2967b?authuser=lynshames@gmail.com) |
+| **M00** | **ENP7333 - M00 : Introduction - Le cycle des politiques publiques** | 2 | [Ouvrir M00](https://notebooklm.google.com/notebook/9f7ccefc-32e5-4ab2-986f-645ba3907de5?authuser=lynshames@gmail.com) |
+| **M01** | **ENP7333 - M01 : Les caractéristiques des politiques publiques** | 8 | [Ouvrir M01](https://notebooklm.google.com/notebook/86bbc52b-b84c-4701-87af-4396a88a7df7?authuser=lynshames@gmail.com) |
+| **M02** | **ENP7333 - M02 : Les problèmes ou enjeux publics** | 9 | [Ouvrir M02](https://notebooklm.google.com/notebook/61d7b4a0-50fb-4bb7-89c9-3c6c49c8bb25?authuser=lynshames@gmail.com) |
+| **M03** | **ENP7333 - M03 : Les niveaux d'action publique** | 7 | [Ouvrir M03](https://notebooklm.google.com/notebook/1f7ec92a-2558-4d18-87de-13b0a7499220?authuser=lynshames@gmail.com) |
+| **M04** | **ENP7333 - M04 : Les acteurs, instruments et institutions** | 19 | [Ouvrir M04](https://notebooklm.google.com/notebook/63a36b08-80c5-433b-928c-742578c4c623?authuser=lynshames@gmail.com) |
+| **M05** | **ENP7333 - M05 : Le processus de prise de décision** | 21 | [Ouvrir M05](https://notebooklm.google.com/notebook/9f3ac56f-96c0-4a7a-9b16-02ff358080e5?authuser=lynshames@gmail.com) |
+| **M06** | **ENP7333 - M06 : Les techniques d'analyse** | 11 | [Ouvrir M06](https://notebooklm.google.com/notebook/0607be04-08e2-4651-9753-71688539184e?authuser=lynshames@gmail.com) |
+| **M07** | **ENP7333 - M07 : L'énoncé de politique publique et le plan de mise en œuvre** | 21 | [Ouvrir M07](https://notebooklm.google.com/notebook/f3dcf6a6-1477-4a82-8939-15e1258d4e3e?authuser=lynshames@gmail.com) |
+| **M08** | **ENP7333 - M08 : Les canaux de diffusion d'une politique publique** | 6 | [Ouvrir M08](https://notebooklm.google.com/notebook/b41e8b2b-e7d1-4fa7-9b74-0f341a21da3d?authuser=lynshames@gmail.com) |
+| **M09** | **ENP7333 - M09 : Les effets réels et symboliques et l'évaluation** | 11 | [Ouvrir M09](https://notebooklm.google.com/notebook/b345decb-3d9f-44a8-a98a-317d5d9fe5c3?authuser=lynshames@gmail.com) |
+| **PINKER** | **Ecrits plus puissants et persuasifs (Steven Pinker)** | 19 | [Ouvrir Pinker](https://notebooklm.google.com/notebook/82a57ebf-b5e7-4586-b12c-97599cde4599?authuser=lynshames@gmail.com) |
+| **BLOOM** | **UQTR Guide to Bloom’s Taxonomy and Pedagogical Strategies** | 2 | [Ouvrir Bloom](https://notebooklm.google.com/notebook/776b0741-d50d-4e57-bd6f-be0e5639f9d9?authuser=lynshames@gmail.com) |
 
 ---
 
@@ -48,3 +49,4 @@ Elle connecte l'intégralité de la matière du cours (**146 ressources** : PDF,
 
 4. **Cartes Mémoire 3D (Flashcards)** :
    - Cartes retournables en 3D par module pour mémoriser rapidement les définitions, auteurs et études de cas (MAPAQ & PAIF).
+

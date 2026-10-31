@@ -27,9 +27,9 @@ window.NOTEBOOKS_DATA = [
         "a": "1) Égalité des genres et renforcement du pouvoir des femmes et des filles (principal), 2) Dignité humaine, 3) Croissance au service de tous, 4) Environnement et action pour le climat, 5) Gouvernance inclusive, 6) Paix et sécurité."
       }
     ],
-    "notebookId": "a70f3776-7009-4de8-9af6-da32638e4243",
+    "notebookId": "42234051-b2f5-45d0-a481-f82ee6c2967b",
     "notebookTitle": "ENP7333 - Références, Évaluations & Politiques (MAPAQ & Aide féministe)",
-    "notebookUrl": "https://notebooklm.google.com/notebook/a70f3776-7009-4de8-9af6-da32638e4243",
+    "notebookUrl": "https://notebooklm.google.com/notebook/42234051-b2f5-45d0-a481-f82ee6c2967b?authuser=lynshames@gmail.com",
     "sourcesCount": 31,
     "sources": [
       {
@@ -212,9 +212,9 @@ window.NOTEBOOKS_DATA = [
         "a": "Parce qu’il simplifie une réalité complexe et non linéaire pour faciliter l’analyse, même si dans la pratique les étapes se chevauchent et s’influencent mutuellement."
       }
     ],
-    "notebookId": "fbfe0031-6e10-4c18-bde9-ebea22e54d32",
+    "notebookId": "9f7ccefc-32e5-4ab2-986f-645ba3907de5",
     "notebookTitle": "ENP7333 - M00 : Introduction - Le cycle des politiques publiques",
-    "notebookUrl": "https://notebooklm.google.com/notebook/fbfe0031-6e10-4c18-bde9-ebea22e54d32",
+    "notebookUrl": "https://notebooklm.google.com/notebook/9f7ccefc-32e5-4ab2-986f-645ba3907de5?authuser=lynshames@gmail.com",
     "sourcesCount": 2,
     "sources": [
       {
@@ -252,9 +252,9 @@ window.NOTEBOOKS_DATA = [
         "a": "Oui : le choix délibéré de ne pas agir (non-décision ou statu quo volontaire) face à un enjeu reconnu fait partie de l’action publique."
       }
     ],
-    "notebookId": "00364e65-88f6-4e1f-9c03-9b51fd785996",
+    "notebookId": "86bbc52b-b84c-4701-87af-4396a88a7df7",
     "notebookTitle": "ENP7333 - M01 : Les caractéristiques des politiques publiques",
-    "notebookUrl": "https://notebooklm.google.com/notebook/00364e65-88f6-4e1f-9c03-9b51fd785996",
+    "notebookUrl": "https://notebooklm.google.com/notebook/86bbc52b-b84c-4701-87af-4396a88a7df7?authuser=lynshames@gmail.com",
     "sourcesCount": 8,
     "sources": [
       {
@@ -326,9 +326,9 @@ window.NOTEBOOKS_DATA = [
         "a": "Traduire une situation vécue en enjeu collectif, désigner des causes et des responsables, mobiliser des coalitions et saisir les fenêtres d’opportunité pour forcer l’inscription à l’agenda."
       }
     ],
-    "notebookId": "9d7e8853-ff91-4c1f-8fcf-d508b08acd14",
+    "notebookId": "61d7b4a0-50fb-4bb7-89c9-3c6c49c8bb25",
     "notebookTitle": "ENP7333 - M02 : Les problèmes ou enjeux publics",
-    "notebookUrl": "https://notebooklm.google.com/notebook/9d7e8853-ff91-4c1f-8fcf-d508b08acd14",
+    "notebookUrl": "https://notebooklm.google.com/notebook/61d7b4a0-50fb-4bb7-89c9-3c6c49c8bb25?authuser=lynshames@gmail.com",
     "sourcesCount": 9,
     "sources": [
       {
@@ -401,9 +401,9 @@ window.NOTEBOOKS_DATA = [
         "a": "L’output est le produit direct de l’activité administrative (ex. nombre de subventions versées), tandis que l’outcome est le changement réel provoqué dans la société (ex. baisse effective de la pollution agricole)."
       }
     ],
-    "notebookId": "53be10b1-a8eb-466d-9ee2-7af137a7cd3c",
+    "notebookId": "1f7ec92a-2558-4d18-87de-13b0a7499220",
     "notebookTitle": "ENP7333 - M03 : Les niveaux d'action publique",
-    "notebookUrl": "https://notebooklm.google.com/notebook/53be10b1-a8eb-466d-9ee2-7af137a7cd3c",
+    "notebookUrl": "https://notebooklm.google.com/notebook/1f7ec92a-2558-4d18-87de-13b0a7499220?authuser=lynshames@gmail.com",
     "sourcesCount": 7,
     "sources": [
       {
@@ -470,9 +470,9 @@ window.NOTEBOOKS_DATA = [
         "a": "Une modification de l’architecture de choix qui oriente de façon prévisible le comportement des individus (en s’appuyant sur le Système 1 de Kahneman, ex. option par défaut) sans interdire aucune option ni modifier significativement les incitatifs économiques."
       }
     ],
-    "notebookId": "2dd0b2ae-7d0e-4307-a868-c0be6aa3cd6e",
+    "notebookId": "63a36b08-80c5-433b-928c-742578c4c623",
     "notebookTitle": "ENP7333 - M04 : Les acteurs, instruments et institutions",
-    "notebookUrl": "https://notebooklm.google.com/notebook/2dd0b2ae-7d0e-4307-a868-c0be6aa3cd6e",
+    "notebookUrl": "https://notebooklm.google.com/notebook/63a36b08-80c5-433b-928c-742578c4c623?authuser=lynshames@gmail.com",
     "sourcesCount": 19,
     "sources": [
       {
@@ -599,9 +599,9 @@ window.NOTEBOOKS_DATA = [
         "a": "La temporalité (le temps, le séquençage, le rythme et les horizons temporels de l’action publique)."
       }
     ],
-    "notebookId": "271b5bf0-246c-4f43-8591-fde4df7c4db4",
+    "notebookId": "9f3ac56f-96c0-4a7a-9b16-02ff358080e5",
     "notebookTitle": "ENP7333 - M05 : Le processus de prise de décision",
-    "notebookUrl": "https://notebooklm.google.com/notebook/271b5bf0-246c-4f43-8591-fde4df7c4db4",
+    "notebookUrl": "https://notebooklm.google.com/notebook/9f3ac56f-96c0-4a7a-9b16-02ff358080e5?authuser=lynshames@gmail.com",
     "sourcesCount": 21,
     "sources": [
       {
@@ -739,9 +739,9 @@ window.NOTEBOOKS_DATA = [
         "a": "Parce que l’analyse des réseaux postule que les acteurs et variables ne sont pas indépendants : ce sont leurs relations d’interdépendance et leur position dans le réseau qui expliquent leur comportement."
       }
     ],
-    "notebookId": "02070845-a7ac-477a-a1f9-0b14b9f415ba",
+    "notebookId": "0607be04-08e2-4651-9753-71688539184e",
     "notebookTitle": "ENP7333 - M06 : Les techniques d'analyse",
-    "notebookUrl": "https://notebooklm.google.com/notebook/02070845-a7ac-477a-a1f9-0b14b9f415ba",
+    "notebookUrl": "https://notebooklm.google.com/notebook/0607be04-08e2-4651-9753-71688539184e?authuser=lynshames@gmail.com",
     "sourcesCount": 11,
     "sources": [
       {
@@ -829,9 +829,9 @@ window.NOTEBOOKS_DATA = [
         "a": "1) Indicateurs de rendement clés (IRC) des champs d’action, 2) Indicateurs mondiaux (ODD), 3) Indicateurs de défense des intérêts, et 4) Indicateurs ministériels."
       }
     ],
-    "notebookId": "374e8cef-dd5b-42fe-b6a4-049e89b87ca8",
+    "notebookId": "f3dcf6a6-1477-4a82-8939-15e1258d4e3e",
     "notebookTitle": "ENP7333 - M07 : L'énoncé de politique publique et le plan de mise en oeuvre",
-    "notebookUrl": "https://notebooklm.google.com/notebook/374e8cef-dd5b-42fe-b6a4-049e89b87ca8",
+    "notebookUrl": "https://notebooklm.google.com/notebook/f3dcf6a6-1477-4a82-8939-15e1258d4e3e?authuser=lynshames@gmail.com",
     "sourcesCount": 21,
     "sources": [
       {
@@ -964,9 +964,9 @@ window.NOTEBOOKS_DATA = [
         "a": "On prépare le contenu initial, mais on dispose de très peu de contrôle sur le traitement final de l’information par les médias et cela dépend fortement de la prestation des intervenants."
       }
     ],
-    "notebookId": "ed7f2996-4d51-48f7-b407-d92fdd39c574",
+    "notebookId": "b41e8b2b-e7d1-4fa7-9b74-0f341a21da3d",
     "notebookTitle": "ENP7333 - M08 : Les canaux de diffusion d'une politique publique",
-    "notebookUrl": "https://notebooklm.google.com/notebook/ed7f2996-4d51-48f7-b407-d92fdd39c574",
+    "notebookUrl": "https://notebooklm.google.com/notebook/b41e8b2b-e7d1-4fa7-9b74-0f341a21da3d?authuser=lynshames@gmail.com",
     "sourcesCount": 6,
     "sources": [
       {
@@ -1028,9 +1028,9 @@ window.NOTEBOOKS_DATA = [
         "a": "Lors de la conception, l’évaluation est prospective (évaluation ex ante des besoins et études d’impact). Lors de la mise en œuvre, elle est opérationnelle et managériale (évaluation concomitante, Gestion axée sur les résultats - GAR, évaluation de l’économie et de l’efficience)."
       }
     ],
-    "notebookId": "bba288e4-35e1-4f5a-8cdd-fdc13935d94f",
+    "notebookId": "b345decb-3d9f-44a8-a98a-317d5d9fe5c3",
     "notebookTitle": "ENP7333 - M09 : Les effets réels et symboliques et l'évaluation",
-    "notebookUrl": "https://notebooklm.google.com/notebook/bba288e4-35e1-4f5a-8cdd-fdc13935d94f",
+    "notebookUrl": "https://notebooklm.google.com/notebook/b345decb-3d9f-44a8-a98a-317d5d9fe5c3?authuser=lynshames@gmail.com",
     "sourcesCount": 11,
     "sources": [
       {
@@ -1119,13 +1119,17 @@ window.NOTEBOOKS_DATA = [
         "a": "Les mots-écrans bureaucratiques comme « niveau », « cadre », « perspective », « processus », « mécanisme », « démarche » ou « problématique » lorsqu’ils remplacent un fait précis."
       }
     ],
-    "notebookId": "a109ad5c-834d-4f3d-82a0-fe41aa72318e",
-    "notebookTitle": "Rendez vos écrits plus puissants et persuasifs (Steven Pinker)",
-    "notebookUrl": "https://notebooklm.google.com/notebook/a109ad5c-834d-4f3d-82a0-fe41aa72318e",
-    "sourcesCount": 1,
+    "notebookId": "82a57ebf-b5e7-4586-b12c-97599cde4599",
+    "notebookTitle": "Ecrits plus puissants et persuasifs (Steven Pinker)",
+    "notebookUrl": "https://notebooklm.google.com/notebook/82a57ebf-b5e7-4586-b12c-97599cde4599?authuser=lynshames@gmail.com",
+    "sourcesCount": 19,
     "sources": [
       {
-        "title": "Synthèse complète : The Sense of Style — Steven Pinker (Fluidité cognitive, Style classique, Noms zombies, Malédiction du savoir)",
+        "title": "Notebook complet : Ecrits plus puissants et persuasifs (19 sources — Steven Pinker, Fluidité cognitive, Style classique, Noms zombies)",
+        "type": "notebook"
+      },
+      {
+        "title": "Notebook associé : UQTR Guide to Bloom’s Taxonomy and Pedagogical Strategies (776b0741-d50d-4e57-bd6f-be0e5639f9d9)",
         "type": "notebook"
       }
     ]

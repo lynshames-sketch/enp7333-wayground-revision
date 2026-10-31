@@ -1,9 +1,9 @@
 // Laboratoire de Rédaction à Impact : Steven Pinker (Notebook ID: a109ad5c-834d-4f3d-82a0-fe41aa72318e) × ENP7333
 
 window.PINKER_LAB_DATA = {
-  notebookId: 'a109ad5c-834d-4f3d-82a0-fe41aa72318e',
-  notebookTitle: 'Rendez vos écrits plus puissants et persuasifs (Steven Pinker — The Sense of Style)',
-  notebookUrl: 'https://notebooklm.google.com/notebook/a109ad5c-834d-4f3d-82a0-fe41aa72318e',
+  notebookId: '82a57ebf-b5e7-4586-b12c-97599cde4599',
+  notebookTitle: 'Ecrits plus puissants et persuasifs (Steven Pinker — The Sense of Style)',
+  notebookUrl: 'https://notebooklm.google.com/notebook/82a57ebf-b5e7-4586-b12c-97599cde4599?authuser=lynshames@gmail.com',
   pillars: [
     {
       id: 'curse',
@@ -221,3 +221,4 @@ window.analyzePinkerText = function(rawText) {
     highlightedHtml
   };
 };
+

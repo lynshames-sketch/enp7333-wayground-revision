@@ -576,3 +576,4 @@ window.QUESTIONS_PART1 = [
     pinkerTip: 'Jugement équilibré (Pinker) : Dans vos travaux, montrez la complémentarité des instruments : « Un nudge facilite l’adhésion quotidienne, mais seule une subvention ou une norme lève la barrière financière. »'
   }
 ];
+
