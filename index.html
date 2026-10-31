@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ENP7333 × Wayground — Révision Interactive (Bloom × Steven Pinker × NotebookLM)</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ==================== BARRE SUPÉRIEURE WAYGROUND ==================== -->
+  <header class="top-header">
+    <div class="header-inner">
+      <div class="brand-block">
+        <div class="brand-logo">⚡</div>
+        <div>
+          <div class="brand-title">ENP7333 • Studio Wayground de Révision</div>
+          <div class="brand-subtitle">Conception et mise en œuvre des politiques publiques (ENAP) • Taxonomie de Bloom × Steven Pinker × 12 Notebooks NotebookLM</div>
+        </div>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat-chip" title="Points d'expérience cumulés">
+          <span>⭐ Score :</span>
+          <strong id="stat-xp">0 XP</strong>
+        </div>
+        <div class="stat-chip" title="Meilleure série de bonnes réponses consécutives">
+          <span>🔥 Record Série :</span>
+          <strong id="stat-best-streak">0 🔥</strong>
+        </div>
+        <div class="stat-chip" title="Questions maîtrisées sur l'ensemble de la banque">
+          <span>🏆 Maîtrise :</span>
+          <strong id="stat-mastery">0/59 (0%)</strong>
+        </div>
+        <button id="btn-missed-mode" class="stat-chip" style="cursor:pointer;border-color:#f43f5e" title="Lancer une session ciblée sur vos questions ratées">
+          <span>🔁 À rattraper :</span>
+          <strong id="stat-missed-count">0</strong>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== NAVIGATION PRINCIPALE ==================== -->
+  <nav class="main-nav">
+    <button class="nav-tab active" data-tab="arena">🎮 Arène Quiz Wayground (Bloom 1–6)</button>
+    <button class="nav-tab" data-tab="notebooks">🧠 Hub NotebookLM par Module (146 Sources)</button>
+    <button class="nav-tab" data-tab="pinker">✍️ Laboratoire d’Impact Steven Pinker</button>
+    <button class="nav-tab" data-tab="flashcards">🃏 Cartes Mémoire 3D (Flashcards)</button>
+  </nav>
+
+  <!-- ==================== CONTENU PRINCIPAL ==================== -->
+  <main class="main-container">
+
+    <!-- 1. ONGLET ARÈNE QUIZ WAYGROUND -->
+    <section id="panel-arena" class="tab-panel active">
+      <div class="arena-controls-card">
+        <div class="controls-top-row">
+          <div class="module-select-wrap">
+            <select id="module-filter-select" class="module-select" aria-label="Filtrer par module"></select>
+          </div>
+          <div class="controls-actions">
+            <label class="toggle-label">
+              <input type="checkbox" id="toggle-timer-mode" checked />
+              <span>⏱️ Chronomètre Wayground (45s)</span>
+            </label>
+            <button id="btn-restart-quiz" class="btn-primary">🔀 Nouveau Mélange Aléatoire (Fisher-Yates)</button>
+          </div>
+        </div>
+
+        <div id="bloom-filter-pills" class="bloom-pills-wrap"></div>
+      </div>
+
+      <div class="arena-layout">
+        <!-- Zone Principale du Quiz -->
+        <div>
+          <div id="quiz-main-card" class="quiz-card">
+            <div class="quiz-hud">
+              <div class="hud-left">
+                <span id="quiz-progress-text" class="quiz-progress-label">Question 1 / 59</span>
+                <span id="quiz-streak-badge" class="streak-badge">🔥 Série : 0 (Multiplicateur ×1)</span>
+              </div>
+              <div class="hud-right">
+                <span id="quiz-timer-text" class="timer-pill">⏱️ 45s</span>
+                <span id="quiz-score-live" class="score-live">0 pts</span>
+              </div>
+            </div>
+
+            <div class="progress-bars-stack">
+              <div class="bar-track" title="Progression de la manche">
+                <div id="quiz-progress-fill" class="bar-fill-progress" style="width: 5%"></div>
+              </div>
+              <div class="bar-track" title="Temps restant pour la question">
+                <div id="quiz-timer-fill" class="bar-fill-timer" style="width: 100%"></div>
+              </div>
+            </div>
+
+            <div id="quiz-question-badges" class="question-badges"></div>
+            <h2 id="quiz-question-text" class="question-title">Chargement de la question...</h2>
+
+            <!-- Dock de Power-ups inspiré de Wayground / Quizizz -->
+            <div class="powerups-dock">
+              <button class="powerup-btn" data-powerup="fifty" title="Élimine 2 choix erronés au hasard">
+                <span>✂️ 50/50</span>
+                <span class="pu-count">2</span>
+              </button>
+              <button class="powerup-btn" data-powerup="double" title="Double les points de cette question">
+                <span>⚡ Double ×2</span>
+                <span class="pu-count">2</span>
+              </button>
+              <button class="powerup-btn" data-powerup="shield" title="Protège votre série et offre un 2e essai en cas d'erreur">
+                <span>🛡️ Seconde Chance</span>
+                <span class="pu-count">1</span>
+              </button>
+              <button class="powerup-btn" data-powerup="freeze" title="Gèle le chronomètre pour cette question">
+                <span>❄️ Gel du Temps</span>
+                <span class="pu-count">2</span>
+              </button>
+              <button class="powerup-btn" data-powerup="hint" title="Affiche un indice basé sur Bloom & Steven Pinker">
+                <span>💡 Indice Pinker</span>
+                <span class="pu-count">3</span>
+              </button>
+            </div>
+
+            <div id="quiz-hint-box" class="hint-banner hidden"></div>
+            <div id="quiz-options-grid" class="options-grid"></div>
+            <div id="quiz-feedback-box" class="feedback-box hidden"></div>
+          </div>
+
+          <!-- Carte Bilan de fin de manche -->
+          <div id="quiz-summary-card" class="quiz-card hidden" style="text-align:center;padding:2.5rem 1.5rem">
+            <h2 style="font-size:1.75rem;margin-bottom:0.5rem">🏆 Manche Wayground Terminée !</h2>
+            <p style="color:var(--text-muted);margin-bottom:1.5rem">Voici votre bilan cognitif et rédactionnel sur cette série :</p>
+            <div class="scanner-kpis" style="max-width:640px;margin:0 auto 1.5rem">
+              <div class="scanner-kpi">
+                <span id="summary-accuracy" class="kpi-val" style="color:#10b981">0%</span>
+                <span class="kpi-lbl">Précision</span>
+              </div>
+              <div class="scanner-kpi">
+                <span id="summary-score" class="kpi-val" style="color:#a78bfa">0 pts</span>
+                <span class="kpi-lbl">Score Total</span>
+              </div>
+              <div class="scanner-kpi">
+                <span id="summary-streak" class="kpi-val" style="color:#f59e0b">0 🔥</span>
+                <span class="kpi-lbl">Meilleure Série</span>
+              </div>
+            </div>
+            <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1.4rem">
+              🎲 Distribution aléatoire effective des bonnes réponses durant cette manche : <strong id="summary-dist-breakdown"></strong>
+            </p>
+            <button class="btn-primary" onclick="document.getElementById('btn-restart-quiz').click()">
+              🔄 Relancer une nouvelle manche mélangée
+            </button>
+          </div>
+        </div>
+
+        <!-- Sidebar : Audit de Distribution Aléatoire + Guide Bloom -->
+        <aside>
+          <div class="sidebar-card">
+            <h3>🎲 Audit de Distribution Aléatoire</h3>
+            <p class="sidebar-desc">
+              Chaque question utilise l’algorithme cryptographique <strong>Fisher-Yates</strong> pour distribuer aléatoirement la bonne réponse entre <strong>A, B, C et D</strong> à chaque chargement :
+            </p>
+            <div class="dist-bars">
+              <div class="dist-row">
+                <strong>A</strong>
+                <div class="dist-track"><div id="dist-bar-A" class="dist-fill dist-A" style="width:25%"></div></div>
+                <span id="dist-val-A">25%</span>
+              </div>
+              <div class="dist-row">
+                <strong>B</strong>
+                <div class="dist-track"><div id="dist-bar-B" class="dist-fill dist-B" style="width:25%"></div></div>
+                <span id="dist-val-B">25%</span>
+              </div>
+              <div class="dist-row">
+                <strong>C</strong>
+                <div class="dist-track"><div id="dist-bar-C" class="dist-fill dist-C" style="width:25%"></div></div>
+                <span id="dist-val-C">25%</span>
+              </div>
+              <div class="dist-row">
+                <strong>D</strong>
+                <div class="dist-track"><div id="dist-bar-D" class="dist-fill dist-D" style="width:25%"></div></div>
+                <span id="dist-val-D">25%</span>
+              </div>
+            </div>
+            <button id="btn-simulate-fisher-yates" class="btn-secondary" style="width:100%;justify-content:center">
+              🔬 Tester 2 000 tirages Fisher-Yates
+            </button>
+            <div id="monte-carlo-result" class="monte-carlo-box hidden"></div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>🪜 Échelle Cognitive de Bloom</h3>
+            <p class="sidebar-desc">Progressez du rappel factuel jusqu’à la création d’énoncés à fort impact (Steven Pinker) :</p>
+            <ul style="list-style:none;font-size:0.8rem;display:flex;flex-direction:column;gap:0.45rem;color:var(--text-muted)">
+              <li>🧠 <strong>N1 Mémoriser :</strong> Auteurs, 13 rubriques, 20j DOSSDEC, cibles</li>
+              <li>💡 <strong>N2 Comprendre :</strong> Output vs Outcome, ADS+ vs AIR, Nudge</li>
+              <li>🛠️ <strong>N3 Appliquer :</strong> Cas logement, itinérance, jeunes ruraux</li>
+              <li>🔍 <strong>N4 Analyser :</strong> Décortiquer le Plan MAPAQ et la PAIF</li>
+              <li>⚖️ <strong>N5 Évaluer :</strong> Classer et justifier les techniques et canaux</li>
+              <li>✍️ <strong>N6 Créer (Pinker) :</strong> Rédiger des objectifs SMART sans noms zombies</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 2. ONGLET HUB NOTEBOOKLM PAR MODULE (12 NOTEBOOKS, 146 SOURCES) -->
+    <section id="panel-notebooks" class="tab-panel">
+      <div class="arena-controls-card">
+        <h2 style="font-size:1.3rem;margin-bottom:0.35rem">🧠 Vos 12 Notebooks NotebookLM Connectés (146 Ressources du Cours Synchronisées)</h2>
+        <p style="font-size:0.9rem;color:var(--text-muted)">
+          Chaque module d’ENP7333 (<strong>REF</strong> et <strong>M00 à M09</strong>) possède son propre NotebookLM contenant l’intégralité des PDF, les transcriptions intégrales des vidéos Panopto (Stéphane Paquin, Robert Baril, Chantal Maillé, Moktar Lamari, Guillaume Beaumier, Patrick de Lamirande), les capsules interactives Storyline et tous les corrigés déverrouillés, complétés par votre notebook <strong>Steven Pinker</strong>.
+        </p>
+      </div>
+      <div id="notebooks-hub-grid" class="notebooks-grid"></div>
+    </section>
+
+    <!-- 3. ONGLET LABORATOIRE D'IMPACT STEVEN PINKER -->
+    <section id="panel-pinker" class="tab-panel">
+      <div class="pinker-scanner-card">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem">
+          <div>
+            <h2 style="font-size:1.3rem">✍️ Scanner d’Impact Rédactionnel Steven Pinker × ENP7333</h2>
+            <p style="font-size:0.88rem;color:var(--text-muted)">
+              Collez un paragraphe de votre Évaluation 1, 2, 3 ou 4 pour détecter les <strong>noms zombies</strong> (nominalisations), les <strong>noms nébuleux</strong> (« au niveau de », « dans le cadre de », « problématique »), les <strong>haies compulsives</strong> (« relativement », « dans une certaine mesure ») et mesurer votre <strong>Score de Fluidité Cognitive (/100)</strong>.
+            </p>
+          </div>
+          <a href="https://notebooklm.google.com/notebook/a109ad5c-834d-4f3d-82a0-fe41aa72318e" target="_blank" rel="noopener noreferrer" class="btn-nlm-open">
+            📘 Ouvrir votre Notebook Steven Pinker ↗
+          </a>
+        </div>
+
+        <textarea id="pinker-scanner-input" class="scanner-textarea" placeholder="Collez ici votre brouillon d'analyse ou d'énoncé de politique publique..."></textarea>
+
+        <div style="display:flex;flex-wrap:wrap;gap:0.65rem">
+          <button id="btn-run-pinker-scan" class="btn-primary">🔍 Analyser l’impact de mon texte</button>
+          <button id="btn-load-sample-bad" class="btn-secondary">🧪 Exemple bureaucratique lourd</button>
+          <button id="btn-load-sample-good" class="btn-secondary">✨ Exemple réécrit façon Pinker</button>
+        </div>
+
+        <div id="pinker-scanner-results"></div>
+      </div>
+
+      <h3 style="font-size:1.2rem;margin:1.5rem 0 0.5rem">🎯 Défis Avant / Après pour vos 4 Évaluations Notées (Éval 1 à 4)</h3>
+      <div id="pinker-challenges-grid" class="pinker-grid-2"></div>
+
+      <h3 style="font-size:1.2rem;margin:1.75rem 0 0.5rem">🏛️ Les 6 Piliers de Steven Pinker appliqués aux Politiques Publiques</h3>
+      <div id="pinker-pillars-grid" class="pinker-grid-2"></div>
+    </section>
+
+    <!-- 4. ONGLET CARTES MÉMOIRE 3D (FLASHCARDS) -->
+    <section id="panel-flashcards" class="tab-panel">
+      <div class="fc-wrapper">
+        <div class="arena-controls-card">
+          <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;justify-content:space-between">
+            <select id="fc-module-select" class="module-select" style="flex:1" aria-label="Filtrer les flashcards par module"></select>
+            <button id="btn-fc-shuffle" class="btn-secondary">🔀 Mélanger le paquet</button>
+          </div>
+        </div>
+
+        <p id="fc-counter" style="font-weight:700;color:var(--text-muted)">Carte 1 sur 28</p>
+
+        <div class="fc-scene">
+          <div id="flashcard-3d" class="fc-card-3d">
+            <div class="fc-face fc-front">
+              <span id="fc-front-badge" class="q-badge">Module</span>
+              <p id="fc-front-text" class="fc-text">Question...</p>
+              <span style="font-size:0.8rem;color:var(--text-muted)">👆 Cliquez sur la carte pour révéler la réponse</span>
+            </div>
+            <div class="fc-face fc-back">
+              <span id="fc-back-badge" class="q-badge">Réponse</span>
+              <p id="fc-back-text" class="fc-text">Réponse...</p>
+              <span style="font-size:0.8rem;color:#93c5fd">👆 Cliquez pour revenir à la question</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;justify-content:center;gap:1rem">
+          <button id="btn-fc-prev" class="btn-secondary">← Carte précédente</button>
+          <button id="btn-fc-next" class="btn-primary">Carte suivante →</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== MODAL LISTE DES 146 RESSOURCES NOTEBOOKLM ==================== -->
+  <div id="sources-modal" class="modal-backdrop hidden" onclick="if(event.target===this) window.closeSourcesModal()">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modal-nb-title">Ressources du Module</h3>
+        <button class="btn-secondary" onclick="window.closeSourcesModal()">✕ Fermer</button>
+      </div>
+      <p style="font-size:0.84rem;color:var(--text-muted);margin-bottom:0.85rem">
+        Toutes ces ressources (PDF, transcriptions intégrales des vidéos Panopto, capsules et corrigés) ont été extraites de Moodle Athenap et importées dans ce NotebookLM :
+      </p>
+      <ul id="modal-sources-list" class="sources-list"></ul>
+      <div style="margin-top:1rem;display:flex;justify-content:flex-end">
+        <a id="modal-nb-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-nlm-open">
+          🧠 Ouvrir ce Notebook dans NotebookLM ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Scripts de données et moteur applicatif -->
+  <script src="js/notebooks-data.js"></script>
+  <script src="js/questions-part1.js"></script>
+  <script src="js/questions-part2.js"></script>
+  <script src="js/pinker-lab.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
